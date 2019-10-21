@@ -1,0 +1,5 @@
+iris = sns.load_dataset('iris')
+
+with sns.axes_style('white'):
+    fig = sns.jointplot(x='sepal_length', y='petal_length', data=iris, kind='kde', space=0, color='tab:green')
+fig.set_axis_labels('Sepal length (cm)', 'Petal length (cm)')

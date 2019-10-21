@@ -1,0 +1,1 @@
+tips['type_day'] = ['Weekend' if day in ['Sat', 'Sun'] else 'Weekday' for day in tips['day']]

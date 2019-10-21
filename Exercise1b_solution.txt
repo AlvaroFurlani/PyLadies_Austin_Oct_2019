@@ -1,0 +1,3 @@
+with plt.style.context('bmh'):
+    sns.boxplot(x='tip', y='type_day', data=tips, orient='h', palette='Pastel2')
+    plt.gca().set(xlabel='Tip ($)', ylabel='')
