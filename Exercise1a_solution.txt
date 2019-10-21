@@ -1,5 +1,5 @@
 # Option 1: for each sample, set the value to either 'Weekday' or 'Weekend'
 tips['type_day'] = ['Weekend' if day in ['Sat', 'Sun'] else 'Weekday' for day in tips['day']]
 
-# Option 2: for set sample, set True for a weekend and False otherwise
+# Option 2: for each sample, set True for a weekend and False otherwise
 tips['type_day'] = tips['day'].isin(['Sat', 'Sun'])
